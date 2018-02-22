@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <XMLDB PATH="local/cleanprofiles/db" VERSION="20130905" COMMENT="XMLDB file for Moodle local/cleanprofiles">
+    <TABLES>
+      <TABLE NAME="local_cleanprofiles" COMMENT="Default comment for local_cleanprofiles, please edit me">
+        <FIELDS>
+          <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="lcfirstname"/>
+          <FIELD NAME="lcfirstname" TYPE="char" LENGTH="50" NOTNULL="true" PREVIOUS="id" NEXT="firstname"/>
+          <FIELD NAME="firstname" TYPE="char" LENGTH="50" NOTNULL="true" PREVIOUS="lcfirstname"/>
+        </FIELDS>
+        <KEYS>
+          <KEY NAME="primary" TYPE="primary" FIELDS="id" />
+        </KEYS>
+        <INDEXES>
+          <INDEX NAME="lcfirstname" UNIQUE="true" FIELDS="lcfirstname"/>
+        </INDEXES>
+      </TABLE>
+    </TABLES>
+  </XMLDB>
