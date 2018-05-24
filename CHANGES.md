@@ -1,5 +1,10 @@
-# moodle-local_cleanprofiles
-
 # Changes
 
-* 2017-07-21 - Initial version as open source software
+## Version 2017012402
+
+- Upgrade to the new event model.
+
+
+## Version 2018052400
+
+- Implements Privacy API for Moodle 3.5 compliance.

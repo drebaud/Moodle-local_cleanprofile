@@ -21,15 +21,12 @@
  * @subpackage cleanprofiles
  * @copyright  2013 onwards Denis Rebaud {@link https://denis.rebaud.fr}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- *
- * Versions:
- * 2017012402 : upgrade to the new event model.
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version  = 2017072500;
-$plugin->release = '1.2';
+$plugin->version  = 2018052400;
+$plugin->release = '1.3';
 $plugin->requires = 2012112400;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'local_cleanprofiles';

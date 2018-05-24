@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of the cleanprofile module for Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -16,34 +15,40 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Certificate module core interaction API
+ * Clean Profiles Plugin
  *
  * @package    local_cleanprofiles
  * @copyright  2013 onwards Denis Rebaud {@link https://denis.rebaud.fr}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace local_cleanprofiles;
+
+defined('MOODLE_INTERNAL') || die();
+
 /**
  * Event handler for Clean Profiles plugin.
  *
  */
-class local_cleanprofiles_observer {
+class observer {
 
-	/**
-	 * Triggered via user_created event.
-	 *
-	 * @param \core\event\user_created $event
-	 */
-	public static function user_created(\core\event\user_created $event) {
-		local_cleanprofiles_cleaner::user_cleanup($event->userid);
-	}
+    /**
+     * Triggered via user_created event.
+     *
+     * @param \core\event\user_created $event
+     */
+    public static function user_created(\core\event\user_created $event) {
+        cleaner::user_cleanup($event->userid);
+    }
 
-	/**
-	 * Triggered via user_updated event.
-	 *
-	 * @param \core\event\user_updated $event
-	 */
-	public static function user_updated(\core\event\user_updated $event) {
-		local_cleanprofiles_cleaner::user_cleanup($event->userid);
-	}
+    /**
+     * Triggered via user_updated event.
+     *
+     * @param \core\event\user_updated $event
+     */
+    public static function user_updated(\core\event\user_updated $event) {
+        cleaner::user_cleanup($event->userid);
+    }
 }
+
+// End of file.

@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of the cleanprofiles module for Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -16,11 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Certificate module core interaction API
+ * Clean Profiles Plugin
  *
  * @package    local_cleanprofiles
  * @copyright  2013 onwards Denis Rebaud {@link https://denis.rebaud.fr}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-// End of file
+ defined('MOODLE_INTERNAL') || die;
+
+// End of file.

@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of the cleanprofile module for Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -28,16 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $observers = array(
 
-	array(
-		'eventname'	=> 'core\event\user_created',
-		'callback'	=> 'local_cleanprofiles_observer::user_created'
-	),
+    array(
+        'eventname' => 'core\event\user_created',
+        'callback' => '\local_cleanprofiles\observer::user_created'
+    ),
 
-	array(
-		'eventname'	=> 'core\event\user_updated',
-		'callback'	=> 'local_cleanprofiles_observer::user_updated'
-	),
-
+    array(
+        'eventname' => 'core\event\user_updated',
+        'callback' => '\local_cleanprofiles\observer::user_updated'
+    )
 );
 
-// End of file
+// End of file.
