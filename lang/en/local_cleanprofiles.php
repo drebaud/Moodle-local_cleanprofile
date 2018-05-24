@@ -23,7 +23,7 @@
  */
 
 
-$string['pluginname'] = 'User profiles cleaner';
+$string['pluginname'] = 'Profiles cleaner';
 $string['settings'] = 'Parameters';
 
 $string['settings:no_change'] = 'Unchanged';
@@ -35,10 +35,14 @@ $string['settings:firstname_accent_helpset'] = 'Correct missing accentuation in 
 $string['settings:firstname_case'] = 'First name case';
 $string['settings:firstname_case_helpset'] = 'First name case';
 $string['settings:delimiters'] = 'Delimiters';
-$string['settings:delimiters_helpset'] = 'The delimiters are used to split first name for better cleaning';
+$string['settings:delimiters_helpset'] = 'The delimiters, separated by a space, are used to split first name for better cleaning';
 $string['settings:lastname_case'] = 'Last name case';
 $string['settings:lastname_case_helpset'] = 'Last name case';
 $string['settings:city_case'] = 'City case';
 $string['settings:city_case_helpset'] = 'City case';
-$string['settings:update_all'] = 'Apply parameters to all existing users';
+$string['settings:update_all'] = 'Apply settings to all users';
 $string['done'] = 'Done. All rules have been applied.';
+
+$string['privacy:metadata'] = 'The profiles cleaner plugin The Profile Cleaner plugin does not save any personal data and just formats data handled by other plugins.';
+
+// End of file.

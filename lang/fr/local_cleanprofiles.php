@@ -23,7 +23,7 @@
  */
 
 
-$string['pluginname'] = 'Nettoyeur de profil utilisateur';
+$string['pluginname'] = 'Nettoyeur de profils';
 $string['settings'] = 'Paramètres';
 
 $string['settings:no_change'] = 'inchangée';
@@ -35,10 +35,14 @@ $string['settings:firstname_accent_helpset'] = 'Corriger les accents manquants d
 $string['settings:firstname_case'] = 'Casse du prénom';
 $string['settings:firstname_case_helpset'] = 'Mise en forme du prénom';
 $string['settings:delimiters'] = 'Délimiteurs';
-$string['settings:delimiters_helpset'] = 'Les délimiteurs servent à découper le prénom pour une mise en majuscule correcte';
+$string['settings:delimiters_helpset'] = 'Les délimiteurs, séparés par une espace, servent à découper le prénom pour une mise en majuscule correcte';
 $string['settings:lastname_case'] = 'Casse du nom';
 $string['settings:lastname_case_helpset'] = 'Mise en forme du nom';
 $string['settings:city_case'] = 'Casse de la ville';
 $string['settings:city_case_helpset'] = 'Mise en forme de la ville';
 $string['settings:update_all'] = 'Appliquer les paramètres à tous les utilisateurs existants';
 $string['done'] = 'Terminé. Tous les noms, prénoms et villes des utilisateurs ont été standardisés.';
+
+$string['privacy:metadata'] = 'Le plugin Nettoyeur de profils nʼenregistre aucune donnée personnelle, car il se contente de mettre en forme celles gérées par les autres plugins.';
+
+// End of file.
